@@ -1,0 +1,287 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*=============================================
+=        SHARED CLASSES AND VARIABLES         =
+=============================================*/
+:root{
+    --tekst_grijs: #707070;
+    --button_blue: #0080FF;
+}
+.allCaps{
+    text-transform: uppercase;
+}
+.box_shadow {
+    box-shadow: 4px 4px 4px#00000029;
+}
+.box_shadow2 {
+    box-shadow: 0px 4px 4px#00000029;
+}
+.exit_button_size{
+    width: 20px;
+    height: 20px;
+}
+/*==========  END SHARED CLASSES  ===========*/
+
+
+
+
+
+
+/*=============================================
+=                PROJECTS PAGE                =
+=============================================*/
+#project_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper_project_page h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    color: var(--tekst_grijs);
+    text-align: left;
+    margin-left: -12px;
+    height: 272px;
+}
+#wrapper_projects_images{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 968px;
+    justify-content: space-between;
+}
+.project_item_size{
+    width: 276px;
+    height: 176px;
+    border-radius: 24px;
+    margin: 0 70px 59px 0;   
+}
+.project_image_size{
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+#fifa{
+    background-image: url(../assets/images/fifa_zonder_titel.jpg);
+    background-size: 115% auto;
+}
+#fortnite{
+    background-image: url(../assets/images/Fortnite.jpg);
+}
+#lego{
+    background-image: url(../assets/images/lego-minifigures-head.jpg);
+    margin: 0 0 59px 0;
+}
+#lotr{
+    background-image: url(../assets/images/lotr.jpg);
+    background-size: 120% auto;
+    margin: 0 70px 0 0;
+}
+#mtg{
+    background-image: url(../assets/images/magic-the-gathering.jpg);
+    background-position:top;
+    margin: 0 70px 0 0;
+}
+#pokemon{
+    background-image: url(../assets/images/pokemon.jpg);
+    margin: 0 0 0 0;
+}
+
+
+
+/* PROJECT HOVERS
+-------------------------------------------------- */
+#wrapper_projects_links{
+    position: absolute;
+
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 968px;
+    justify-content: space-between;
+}
+.hover_project{
+    background-color: white;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+.hover_project:hover{
+    opacity: 0.8;
+}
+.lego_hover{
+    margin: 0 0 59px 0;
+    background-color: #F7FF00;
+}
+.hover_project:nth-of-type(4), .hover_project:nth-of-type(5){
+    margin: 0 70px 0 0;
+}
+.hover_project:nth-of-type(6){
+    margin: 0 0 0 0;
+}
+#wrapper_projects_links p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--tekst_grijs);
+
+    width: 230px;
+    height: 111px;  
+    padding: 33px 0 0 21px;
+}
+#wrapper_projects_links a{
+    text-decoration: none;
+}
+/* END OF PROJECT HOVERS
+-------------------------------------------------- */
+/*============  END PROJECTS PAGE  =============*/
+
+
+
+/*=============================================
+=                    LOGIN                    =
+=============================================*/
+#login_container {
+    width: 479px;
+    height: 644px;
+    border: 1px solid #70707047;
+    border-radius: 17px;
+    margin: 45px auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#wrapper_login {
+    padding-top: 33px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#exit_button{
+    align-self: flex-end;
+    margin: 37px 43px 0 0;
+}
+#login_container h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--tekst_grijs);
+    height: 48px;
+}
+#login_container h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    color: var(--tekst_grijs);
+}
+
+#login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_input {
+    width: 353px;
+    height: 63px;
+    border: 1px solid #70707047;
+    outline: none;
+    border-radius: 17px;
+
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    color: var(--tekst_grijs);
+}
+#login_container .form_input:nth-of-type(1){
+    margin-top: 72px;
+}
+#login_container .form_input:nth-of-type(2){
+    margin-top: 23px;
+}
+::placeholder {
+    color: #AFAFAF;;
+}
+
+.form_submit {
+    background-color: var(--button_blue);
+    border: none;
+    border-radius: 13px;
+    width: 180px;
+    height: 68px;
+    margin-top: 44px;
+
+    cursor: pointer;
+    transition: hover 0.3s;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.form_submit:hover {
+    background-color: #2e95fc;
+}
+
+.create_account {
+    margin-top: 36px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--button_blue);
+    text-decoration: none;
+}
+/*============  END OF LOGIN  =============*/
+
+
+/*=============================================
+=               CREATE ACCOUNT                =
+=============================================*/
+#create_account_container {
+    width: 479px;
+    height: 644px;
+    border: 1px solid #70707047;
+    border-radius: 17px;
+    margin: 45px auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+#wrapper_create {
+    padding-top: 21px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#create_account_container h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: var(--tekst_grijs);
+}
+#create_form {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#create_account_container .form_input:nth-of-type(2), .form_input:nth-of-type(3){
+    margin-top: 23px;
+}
+#create_account_container .form_submit{
+    margin-top: 39px;
+    width: 312px;
+}
+/*============  End of CREATE ACCOUNT  =============*/
+
+
+
+
+

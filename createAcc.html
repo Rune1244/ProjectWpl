@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account aanmaken</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="create_account_container" class="box_shadow2">
+            <a id="exit_button" href="index.html"><img class="exit_button_size" src="assets/svg/cross.svg" alt=""></a>
+            <div id="wrapper_create">
+                <h2>Maak je account aan</h2>
+                <form id="create_form" action="#" method="POST">
+                    <input type="text" class="form_input box_shadow2" name="gebruikersnaam" placeholder="Vul een gebruikersnaam in" required>
+                    <input type="password" class="form_input box_shadow2" name="wachtwoord" placeholder="Vul een wachtwoord in" required>
+                    <input type="password" class="form_input box_shadow2" name="herhaal-wachtwoord" placeholder="Herhaal het wachtwoord"
+                    required>
+                    <button type="submit" class="form_submit">maak account</button>
+                </form>
+                <a href="login.html" class="create_account">Log in met een bestaand account</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
